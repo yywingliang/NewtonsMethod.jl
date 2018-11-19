@@ -13,7 +13,12 @@ function newtonroot(f, f′; x₀, tolerance = 1E-7, maxiter = 1000)
         x_old = x_new
         iter = iter + 1
     end
-    return (root = x_old, normdiff = normdiff, iter = iter) # A named tuple
+
+    if iter < maxiter+1
+        return (root = x_old, normdiff = normdiff, iter = iter) # A named tuple
+    else
+        return nothing
+    end
 end
 
 # for auto-differentiation, can just forward to the existing one
