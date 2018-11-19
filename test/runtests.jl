@@ -36,13 +36,13 @@ f′(x)=cos(x)
 
 
 #Test non-convergence
-#f(x)=x^2+2
-#@test newtonroot(f,x₀=0.5).root == nothing
+f(x)=x^2+2
+@test newtonroot(f,x₀=0.5) == nothing
 
 
 #Test maxiter
-#f(x)=log(x)-1
-#@test newtonroot(f,x₀=0.5,maxiter=5).root == nothing
+f(x)=log(x)-1
+@test newtonroot(f,x₀=0.5,maxiter=5) == nothing
 
 
 #Test tolerance
