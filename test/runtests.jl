@@ -3,7 +3,7 @@ using Test
 
 @testset "NewtonsMethod.jl" begin
 
-#Test 1
+#Test 1.0
 
 f1(x) = (x-1.0)^3
  f1′(x) = 3.0*(x-1.0)^2
