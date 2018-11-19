@@ -29,7 +29,7 @@ f(x)=log(x)-1
 
 
 #Test Big Float
-ff(x)=sin(x)-1
+f(x)=sin(x)-1
 f′(x)=cos(x)
 @test newtonroot(f, f′, x₀ = BigFloat(1.0), tolerance = 1E-32).root ≈ BigFloat(pi/2) atol = 1E-16
 @test newtonroot(f, x₀ = BigFloat(1.0), tolerance = 1E-32).root ≈ BigFloat(pi/2) atol = 1E-16
