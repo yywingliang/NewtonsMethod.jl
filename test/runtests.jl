@@ -1,4 +1,4 @@
-using NewtonsMethod
+using NewtonsMethod, LinearAlgebra
 using Test
 
 @testset "NewtonsMethod.jl" begin
