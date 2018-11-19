@@ -1,6 +1,6 @@
 module NewtonsMethod
 
-using LinearAlgrbra, Statistics, Compat, ForwardDiff
+using LinearAlgebra, Statistics, Compat, ForwardDiff
 
 function newtonroot(f, f′; x₀, tolerance = 1E-7, maxiter = 1000)
     # setup the algorithm
